@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="gallery_img_on" transform="translate(144 -886)">
+    <g id="gallery_img_on-2" data-name="gallery_img_on" transform="translate(-409 562)">
+      <rect id="사각형_25" data-name="사각형 25" width="32" height="32" transform="translate(265 324)" fill="none"/>
+      <g id="사각형_33" data-name="사각형 33" transform="translate(271 333)" fill="none" stroke="#00462e" stroke-width="1.5">
+        <rect width="20" height="14" stroke="none"/>
+        <rect x="0.75" y="0.75" width="18.5" height="12.5" fill="none"/>
+      </g>
+    </g>
+    <path id="패스_25" data-name="패스 25" d="M-137.075,2234s1.947-9.888,5.857-8.093,2.308,8.4,4.167,4.423,4.973-2.253,5.644-1.495a38.968,38.968,0,0,1,2.48,5.165" transform="translate(0 -1326)" fill="none" stroke="#00462e" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>

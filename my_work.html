@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="https://lee-hyell-portfolio.netlify.app/my_work.html" property="og:url"/>
+    <meta content="웹 디자이너 & 웹 퍼블리셔" property="og:description"/>
+    <meta content="https://lee-hyell-portfolio.netlify.app/img/kakao_img.png" property="og:image"/>
+
+    <title>이혜린 포트폴리오</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/leehyell.css">
+</head>
+<body>
+    <header class="header_flex display_flex flex_nowrap flex_between flex_align_c">
+        <p>내 작품</p>
+        <button type="button" onclick="calendarOnOff(this)" data-id="calendar_icon" id="calendar_icon" class="calendar_icon">
+            <span></span>
+        </button>
+    </header>
+    <main class="main_whole">
+        <div id="calendarForm"></div>
+        <div class="work_choose_whole">
+            <div class="work_choose_inner display_flex flex_nowrap flex_between flex_align_c">
+                <p id="today_txt"></p>
+                <nav class="work_choose_flex display_flex flex_nowrap flex_end flex_align_c">
+                    <a href="javascript:location.replace('my_work.html?type=pic')" class="work_choose_btn work_choose_on work_choose_btn1"></a>
+                    <p></p>
+                    <a href="javascript:location.replace('my_work.html?type=list')" class="work_choose_btn work_choose_btn2"></a>
+                </nav>
+            </div>
+        </div>
+        <div class="pic_whole_nocalendar">
+            <p class="no_data_txt">해당 날짜에는 포트폴리오가 없습니다.</p>
+            <a href="https://myownsecretary.netlify.app/" id="work20220810" class="pic_row_a" target="_blank">
+                <div class="pic_row display_flex flex_nowrap flex_start flex_align_c">
+                    <img src="./img/port/calendar_img.png" alt="나만의비서 앱 사진">
+                    <div>
+                        <p>나만의 비서</p>
+                        <p>[앱]</p>
+                        <p>2022.07.31 ~ 2022.08.10</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://leehyell-card-game.netlify.app/" id="work20220707" class="pic_row_a" target="_blank">
+                <div class="pic_row display_flex flex_nowrap flex_start flex_align_c">
+                    <img src="./img/card_game_img.png" alt="카드게임 사진">
+                    <div>
+                        <p>Flip Card</p>
+                        <p>[웹]</p>
+                        <p>2022.07.03 ~ 2022.07.07</p>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:void(0)" id="work20220616" class="pic_row_a" target="_blank">
+                <div class="pic_row display_flex flex_nowrap flex_start flex_align_c">
+                    <img src="./img/port/port_img.png" alt="포트폴리오 사진">
+                    <div>
+                        <p>포트폴리오</p>
+                        <p>[웹]</p>
+                        <p>2022.06.16 ~ ing</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.notion.so/_Giving-Tree-1ca1b47fa7bf40ec9d81c84c13739a8f" id="work20200603" class="pic_row_a" target="_blank">
+                <div class="pic_row display_flex flex_nowrap flex_start flex_align_c">
+                    <img src="./img/giving_img.JPG" alt="기빙 트리 사진">
+                    <div>
+                        <p>giving tree</p>
+                        <p>[앱]</p>
+                        <p>2020.05.26 ~ 2020.06.03</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="list_whole_nocalendar">
+            <p class="no_data_txt">해당 날짜에는 포트폴리오가 없습니다.</p>
+            <a href="https://myownsecretary.netlify.app/" id="work_20220810" class="pic_row_a" target="_blank">
+                <div class="pic_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p>[앱]나만의 비서</p>
+                    <p>2022.07.31 ~ 2022.08.10</p>
+                </div>
+            </a>
+            <a href="https://leehyell-card-game.netlify.app/" id="work_20220707" class="pic_row_a" target="_blank">
+                <div class="pic_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p>[웹]Flip Card Game</p>
+                    <p>2022.07.03 ~ 2022.07.07</p>
+                </div>
+            </a>
+            <a href="javascript:void(0)" id="work_20220616" class="pic_row_a" target="_blank">
+                <div class="pic_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p>[웹]포트폴리오</p>
+                    <p>2022.06.16 ~ ing</p>
+                </div>
+            </a>
+            <a href="https://www.notion.so/_Giving-Tree-1ca1b47fa7bf40ec9d81c84c13739a8f" id="work_20200603" class="pic_row_a" target="_blank">
+                <div class="pic_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p>[앱]giving tree</p>
+                    <p>2020.05.26 ~ 2020.06.03</p>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer class="footer_section">
+        <nav class="footer_nav display_flex flex_nowrap flex_start flex_align_c">
+            <a href="javascript:void(0)" class="footer_nav_on">
+                <p>내작품</p>
+                <span></span>
+            </a>
+            <a href="index.html">
+                <p>프로필</p>
+            </a>
+            <a href="gallery_list.html">
+                <p>갤러리</p>
+                <span></span>
+            </a>
+        </nav>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="./js/leehyell_js.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="leehyell" property="og:title"/>
+    <meta content="https://lee-hyell-portfolio.netlify.app/index.html" property="og:url"/>
+    <meta content="웹 디자이너 & 웹 퍼블리셔" property="og:description"/>
+    <meta content="https://lee-hyell-portfolio.netlify.app/img/kakao_img.png" property="og:image"/>
+
+    <title>이혜린 포트폴리오</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/leehyell.css">
+</head>
+<body onload="timeLoad()">
+    <header class="header_flex display_flex flex_nowrap flex_between flex_align_c">
+        <p>포트폴리오</p>
+        <p class="header_nickname">LEEHYELL</p>
+    </header>
+    <main class="main_whole">
+        <div class="profile_box">
+            <p>프로필</p>
+            <div class="profile_flex display_flex flex_nowrap flex_start flex_align_c">
+                <div class="profile_img">
+                    <img src="./img/my_pic.jpg" alt="내 프로필">
+                </div>
+                <div class="profile_info">
+                    <p>이름: 이혜린</p>
+                    <p>나이: 28세(1995년생)</p>
+                    <p>대리(웹 디자이너/퍼블리셔 총괄 팀장)</p>
+                </div>
+            </div>
+            <a href="https://github.com/leehyell" target="_blank" class="git_address_txt">
+                <p>git 주소: https://github.com/leehyell</p>
+            </a>
+            <div class="profile_flex profile_flex2 display_flex flex_nowrap flex_start flex_align_c">
+                <button type="button" onclick="callTo(this)" data-id="btn_call" id="btn_call" class="profile_btn profile_disabled">전화</button>
+                <button type="button" onclick="smsTo(this)" data-id="btn_sms" id="btn_sms" class="profile_btn">문자</button>
+                <button type="button" onclick="mailTo(this)" data-id="btn_mail" id="btn_mail" class="profile_btn">메일</button>
+            </div>
+            <p id="warning_txt">
+                ※월~금 10:00~18:30(업무시간), 00:00~09:59 시간대는 통화가 어렵습니다.
+                <br/>
+                또한 모르는 번호는 잘 받지 않고 있어 통화 거절이 되었을 경우 먼저 문자 혹은 이메일을 보내주시면 감사하겠습니다.
+            </p>
+        </div>
+        <div class="about_me_whole">
+            <nav class="about_me_nav display_flex flex_nowrap flex_start flex_align_c">
+                <a href="javascript:location.replace('index.html?type=history')" class="about_nav about_nav1 about_nav_on">
+                    <p>커리어</p>
+                </a>
+                <a href="javascript:location.replace('index.html?type=work')" class="about_nav about_nav2">
+                    <p>하는 일</p>
+                </a>
+                <a href="javascript:void(0)">
+                    <p>dd</p>
+                </a>
+            </nav>
+            <div class="about_box about_history display_flex flex_column_reserve">
+                <div class="about_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p class="about_title">2014.<br/>03.02</p>
+                    <div class="about_p">
+                        <p>대학교 입학</p>
+                        <p>한국공학대학교 입학</p>
+                    </div>
+                </div>
+                <div class="about_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p class="about_title">2018.<br/>10.01</p>
+                    <div class="about_p">
+                        <p>입사</p>
+                        <p>Dailylaboratory 입사</p>
+                    </div>
+                </div>
+                <div class="about_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p class="about_title">2019.<br/>02.15</p>
+                    <div class="about_p">
+                        <p>대학교 졸업</p>
+                        <p>한국공학대학교 졸업</p>
+                    </div>
+                </div>
+                <div class="about_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p class="about_title">2018~<br/>2020</p>
+                    <div class="about_p">
+                        <p>웹 디자이너</p>
+                        <p>PPT, 웹툰, 웹 디자인 작업 등</p>
+                    </div>
+                </div>
+                <div class="about_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p class="about_title">2020.<br/>03.01</p>
+                    <div class="about_p">
+                        <p>웹 퍼블리싱 독학</p>
+                        <p>퍼블리싱 독학 시작</p>
+                    </div>
+                </div>
+                <div class="about_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p class="about_title">2021.<br/>01.01</p>
+                    <div class="about_p">
+                        <p>웹 퍼블리셔</p>
+                        <p>웹 퍼블리셔 전향</p>
+                    </div>
+                </div>
+                <div class="about_row display_flex flex_nowrap flex_start flex_align_c">
+                    <p class="about_title">2022.<br/>01.01</p>
+                    <div class="about_p">
+                        <p>웹 디자인/퍼블리싱 팀장</p>
+                        <p>웹 디자인/퍼블리싱 총괄 팀장</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_box about_work">
+                <div class="work_flex display_flex flex_nowrap flex_start flex_align_c">
+                    <p class="work_title">웹 디자이너 & 퍼블리셔</p>
+                    <span></span>
+                </div>
+                <p id="work_info_txt">
+                    Adobe 'XD' 프로그램을 이용하여 웹 디자인을 
+                    하고, 디자인 된 웹 페이지를 'Visual Studio Code' 
+                    프로그램을 이용하여 퍼블리싱 합니다.
+                    <br/>
+                    웹 페이지는 반응형을 기준으로 제작하고 있으며 
+                    웹 디자인에 들어가는 로고 및 아이콘은 모두 
+                    'Illustrator' 프로그램을 이용합니다. 웹 페이지에 
+                    들어가는 이미지들은 'pixabay'에서 다운 받아 사용합니다.
+                    <br/>
+                    <br/>
+                    현재 재직 중인 회사에서 '디자인 및 퍼블리싱 
+                    총괄 팀장'으로서 다양한 디자인 및 퍼블리싱에 메인축으로 
+                    일하고 있으며, 카드 게임 퍼블리싱을 구현한 경험도 있습니다.
+                    <br/>
+                    최근에는 'The way to find'라는 간단한 게임 
+                    레이아웃을 디자인 및 퍼블리싱 중에 있습니다.
+                    <br/>
+                    <br/>
+                    다양한 프로그램을 배우는 것을 좋아하여 'After Effect'를 이용하여 
+                    애니메이션을 제작할 수 있으며, PPT, 'Photoshop' 등의 다양한 'Adobe' 
+                    프로그램을 사용할 수 있습니다.
+                </p>
+                <button type="button" class="work_readmore_btn" onclick="workReadMore()">더보기</button>
+            </div>
+        </div>
+        <input type="text" id="today_time" class="today_time" hidden>
+        <input type="text" id="page_name" class="page_name" hidden>
+    </main>
+    <footer class="footer_section">
+        <nav class="footer_nav display_flex flex_nowrap flex_start flex_align_c">
+            <a href="my_work.html?type=pic">
+                <p>내작품</p>
+                <span></span>
+            </a>
+            <a href="javascript:void(0)" class="footer_nav_on">
+                <p>프로필</p>
+            </a>
+            <a href="gallery_list.html">
+                <p>갤러리</p>
+                <span></span>
+            </a>
+        </nav>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="./js/leehyell_js.js"></script>
+</body>
+</html>
